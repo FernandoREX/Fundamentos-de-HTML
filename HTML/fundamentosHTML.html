@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mexican traditions</title>  <!--Etiqueta para el nombre de la pagina-->
+</head>
+<body>
+    <!--Existen 6 tipos de heading h1, h2, h3, h4, h5 y h6-->
+    <h1>Day of the Dead</h1>    <!-- Etiqueta para Titulo principal-->
+    <hr />  <!--Separacion tematica: genera una linea-->
+    <h2>Origin of Tradition</h2>    <!--Etiqueta para Subtitulos-->
+    <p>Death comes to all of us</p>     <!--Etiqueta para parrafo de texto-->
+    <p>
+        The celebration of the deceased faithful in Mexico has
+        its origin in pre-Hispanic times. <br />According to historians, <!--br es una etiqueta de salto de linea-->
+        <span style="color:red">
+            the Mexica had various periods throughout the year to
+            celebrate their dead
+        </span>, the most important of which took place
+        at the end of the harvest, between the months of September
+        and November.
+        <!--
+            La etiqueta spam se usa para remarcar un texto, es su version normal
+            no se persive ningun cambio, para notar cambios es necesario usar css,
+            en este caso usamos " style="color:(color a usa)" ".
+            Css lo estaremos viendo y estudiando en el siguiente documento.
+        -->
+    </p>
+    <a target="_blank" href="https://www.youtube.com/watch?v=_sSawpU81cI">  Video origin of the day of the dead</a>
+    <!--La etiqueta "a" se usa para poder navegar por internet o dentro de
+        niuestra propia paguina, para esto es necesario usar la siguiente
+        notacion: <a href="URL de la pagina o sitio" > TEXTO </a>
+        esto recargara la misma paguina con el URL indicado, si desea abrir
+        una nueva pestaña, debemos agregar una nueva propiedad a la etiqueta
+        " target="_blank" " con esta nueva propiedad abrilra el URL en una nueva
+        pestaña.
+    -->
+    <br /> <!--Salto de linea-->
+    <img src="IMG/img.png" height="400" />
+    <!--
+        La etiqueta img es para imagenes, se utiliza la propiedad de " src="ruta o URL de la imagen" "
+        para la ruta es necesario guardar la imagen en la misma carpeta del proyecto.
+        ademas podemos ajustar la altura y el ancho en pixeles, si solo cambias una
+        propiedad, sea el ancho o el alto, se mantrendara una relacion uniforme en la
+        imagen.
+    -->
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Interacciones con el usuario-->
+    <!--Formularios (form)-->
+    <hr />
+    <!--Explicacion de form estara proximamente en un video en youtube-->
+    <form action="/formulario" method="post">
+        <label for="nombre">Name: </label>
+        <input id="nombre" name="Nom" placeholder="Jorge Prada" />
+        <br />
+        <label for="comentario">Write a comment: </label>
+        <br />
+        <textarea cols="50" rows="10" id="comentario" placeholder="Enter comment" name="Com"></textarea>
+        <br />
+        <!--Botones-->
+        <!--<button type="button">Send</button> hace lo que programemos en javascrip-->
+        <button type="reset">Reset</button> <!--limpia los campos-->
+        <button type="submit">Send</button> <!--envia la informacion a la ruta indicada-->
+        <!--Podemos agrgar imagenes y personalizarlos-->
+    </form>
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Listas (ul)-->
+    <hr />
+    <ul>
+        <!--Lista no ordenada-->
+        <li>
+            <!--Elemento de la lista-->
+            Elemento 1
+        </li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            Elemento 4
+            <ol>
+                <!--Lista ordenada-->
+                <li style="list-style-type:lower-alpha">Elemento 1</li>
+                <li style="list-style-type:lower-roman">Elemento 2</li>
+                <li style="list-style-type:lower-greek">Elemento 3</li>
+            </ol>
+        </li>
+        <li>Elemento 5</li>
+    </ul>
+
+    <!--En la lista ordenada podemos poner un valor inicial e iniciara ahi incrementando en 1
+        Se pueden anidar listas. creando una lista dentro de otras-->
+    <!--Para modificar el tipo de conteo se utilizara "style="list-style-type: FORMA_DE_CONTEO" " -->
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Pie de pagina (footer)-->
+    <hr />
+    <footer>
+        <a href="mailto:mail_prueva@gmail.com">mail_prueva@gmail.com</a>
+        <br />
+        <a href="mailto:mail_prueva@gmail.com">Contactame aqui!!</a>
+        <!--con esto podemos enviar correos diractamente al correo indicado "mailto:correo"-->
+        <p>
+            Codigo en HTML creado con el proposito de estudiar y aprender por
+            Rex Tecnologia <br />
+            Cualquier duda puedes contactarme <a href="https://fernandorex.glitch.me/Fernando.html">aqui</a>
+        </p>
+        
+    </footer>
+
+</body>
+</html>
